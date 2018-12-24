@@ -1,16 +1,50 @@
-# vue-steps
+# Vue 进度条
 
-## Project setup
+_一款基于 Vue 的建议进度条组件_
+
+### 使用用例
+
 ```
-npm install
+<template>
+  <div class="step">
+    <VueSteps :items="items" :activeIndex='activeIndex' />
+  </div>
+</template>
+
+<script>
+import VueSteps from '@/components/VueSteps.vue'
+export default {
+  name: 'Step',
+  components: {
+    VueSteps
+  },
+  data() {
+    return {
+      activeIndex: 0,
+      items: [
+        {
+          num: '1',
+          text: '基础信息'
+        },
+        {
+          num: '2',
+          text: '扫描计划'
+        },
+        {
+          num: '3',
+          text: '扫描目标'
+        },
+        {
+          num: '4',
+          text: '完成'
+        }
+      ]
+    }
+  }
+}
+</script>
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 示例
 
-### Compiles and minifies for production
-```
-npm run build
-```
+![Steps](https://github.com/jmwei/vue-steps/blob/master/src/assets/step.gif 'Steps')
