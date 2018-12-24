@@ -45,8 +45,6 @@ export default {
 </script>
 ```
 
-### 示例图
-
-![Steps](https://github.com/jmwei/vue-steps/blob/master/src/assets/step-1.png "Steps")
+### 示例
 
 ![Steps](https://github.com/jmwei/vue-steps/blob/master/src/assets/step.gif "Steps")
